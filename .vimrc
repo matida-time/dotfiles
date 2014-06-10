@@ -7,7 +7,6 @@ colorscheme default
 " == display
 set number
 set laststatus=2
-"set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set title
 set linespace=0
 "set showcmd
@@ -42,6 +41,10 @@ nnoremap <C-k> :bnext<CR>
 " =================================================================
 " plugin settings
 " =================================================================
+
+" == lightline
+set t_Co=256
+"let g:lightline = { 'colorscheme': 'solarized' }
 
 " == vim-rails
 let g:rails_level = 4
@@ -78,13 +81,13 @@ nnoremap <C-]> g<C-]>
 "let g:netrw_browse_split = 0
 
 " == buftabs
-let g:buftabs_only_basename=1
+"let g:buftabs_only_basename=1
 " バッファタブをステータスライン内に表示する
-let g:buftabs_in_statusline=1
+"let g:buftabs_in_statusline=1
 " 現在のバッファをハイライト
-let g:buftabs_active_highlight_group="Visual"
+"let g:buftabs_active_highlight_group="Visual"
 " ステータスライン
-set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
+"set statusline=%=\ [%{(&fenc!=''?&fenc:&enc)}/%{&ff}]\[%Y]\[%04l,%04v][%p%%]
 
 
 " <C-h>, <BS>: close popup and delete backword char.
