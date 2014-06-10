@@ -1,0 +1,21 @@
+[diff]
+  renames = copy
+
+[color]
+  ui = true
+[user]
+  name = matsuda_yusuke
+  email = matsuda_yusuke@mso.drecom.co.jp
+[core]
+  editor = vim
+  autocrlf = input
+  whitespace = cr-at-eol
+  pager =
+  excludesfile = ~/.gitignore
+[alias]
+  ll = log --stat --abbrev-commit -n 5
+  lp = log --oneline -n 10 -p
+  ls = log --stat --abbrev-commit -n 1
+  s  = status --short --branch
+  st = status
+
