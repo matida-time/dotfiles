@@ -40,6 +40,10 @@ nnoremap <silent>bl :bl<CR>
 nnoremap <silent>bm :bm<CR>
 nnoremap <silent>bd :bdelete<CR>
 
+" 全角スペースをハイライトする
+highlight JpSpace cterm=underline ctermfg=Blue guifg=Blue
+autocmd BufRead,BufNew * match JpSpace /　/
+
 "=================================================================
 " plugin settings
 "=================================================================
@@ -57,6 +61,20 @@ let g:neocomplcache_enable_at_startup = 1            " 起動時に有効化
 let g:neocomplcache_enable_smart_case = 1            " 大文字が入力されるまで、大文字小文字の区別を無視
 let g:neocomplcache_enable_underbar_completion = 1   " _区切りの補完を有効化
 let g:neocomplcache_force_overwrite_completefunc = 1 " completefuncを上書き
+let g:neocomplcache_min_syntax_length = 3
+let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*'
+
+" Define dictionary.
+let g:neocomplcache_dictionary_filetype_lists = {
+    \ 'default' : ''
+    \ }
+
+" <C-h>, <BS>: close popup and delete backword char.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
+inoremap <expr><C-y> neocomplcache#close_popup()
+inoremap <expr><C-e> neocomplcache#cancel_popup()
 
 "===== vim-indent-guides =====
 let g:indent_guides_enable_on_vim_startup = 1
@@ -79,15 +97,3 @@ let g:vim_tags_gems_tags_command = "/usr/bin/ctags -R {OPTIONS} `bundle show --p
 
 " 候補が複数ある場合は一覧表示
 nnoremap <C-]> g<C-]>
-
-
-"===== neocomplecache =====
-" <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>"
-inoremap <expr><C-y> neocomplcache#close_popup()
-inoremap <expr><C-e> neocomplcache#cancel_popup()
-
-" 全角スペースをハイライトする
-highlight JpSpace cterm=underline ctermfg=Blue guifg=Blue
-autocmd BufRead,BufNew * match JpSpace /　/
