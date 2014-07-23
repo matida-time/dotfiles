@@ -20,7 +20,9 @@ set formatoptions=lmoq          "整形オプション，マルチバイト系�
 set shiftwidth=2                "シフト幅
 set hlsearch
 set ts=2                        "Tabのspaceは2
-set nocp
+set nocompatible
+set mouse=a
+
 filetype plugin on
 
 "===== encode =====
