@@ -24,6 +24,7 @@ set nocompatible
 set mouse=a
 
 filetype plugin on
+filetype indent on
 
 "===== encode =====
 set encoding=utf-8

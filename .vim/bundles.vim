@@ -19,6 +19,7 @@ if has('vim_starting')
 
   filetype plugin on
   filetype indent on
+  syntax on
 endif
 
 " == Plugins
@@ -53,7 +54,16 @@ NeoBundle 'szw/vim-tags'
 " https://github.com/itchyny/lightline.vim
 NeoBundle 'itchyny/lightline.vim'
 
-" https://github.com/slim-template
-"NeoBundle 'slim-template/vim-slim'
+" slim
+NeoBundle 'slim-template/vim-slim'
+
+" Javascript
+NeoBundle 'jelera/vim-javascript-syntax'
+
+" CoffeeScript
+NeoBundle 'kchmck/vim-coffee-script'
+
+" Golang
+"NeoBundle 'fatih/vim-go'
 
 " == Plugins End ...rest of bundles
