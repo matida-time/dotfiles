@@ -100,3 +100,6 @@ let g:vim_tags_gems_tags_command = "/usr/bin/ctags -R {OPTIONS} `bundle show --p
 
 " 候補が複数ある場合は一覧表示
 nnoremap <C-]> g<C-]>
+
+"===== vim-slim =====
+autocmd BufNewFile,BufRead *.slim set ft=slim
