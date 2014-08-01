@@ -4,8 +4,8 @@
 [color]
   ui = true
 [user]
-  name = matsuda_yusuke
-  email = matsuda_yusuke@mso.drecom.co.jp
+  name = yusuke_matsuda
+  email = yusuke.matsuda@luxiar.com
 [core]
   editor = vim
   autocrlf = input
