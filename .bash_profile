@@ -10,3 +10,7 @@ export PATH=/usr/local/bin:$PATH
 
 # nodejs
 #PATH=$PATH:$HOME/.nvm/v0.10.26/bin/node
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi

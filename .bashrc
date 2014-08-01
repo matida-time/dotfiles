@@ -26,3 +26,6 @@ export SVN_EDITOR=vim
 export PATH="/usr/local/rbenv/shims:$PATH"
 
 #PATH=$PATH:/usr/local/rvm/bin # Add RVM to PATH for scripting
+
+#=== postgresql
+export PGDATA=/usr/local/var/postgres
