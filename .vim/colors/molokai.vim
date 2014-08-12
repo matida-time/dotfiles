@@ -31,7 +31,8 @@ hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
 hi Number          guifg=#AE81FF
 hi String          guifg=#E6DB74
-hi Conditional     guifg=#F92672               gui=bold
+"hi Conditional     guifg=#F92672               gui=bold
+hi Conditional     guifg=#F92672
 hi Constant        guifg=#AE81FF               gui=bold
 hi Cursor          guifg=#000000 guibg=#F8F8F0
 hi iCursor         guifg=#000000 guibg=#F8F8F0
@@ -148,8 +149,10 @@ if &t_Co > 255
    hi Character       ctermfg=144
    hi Number          ctermfg=135
    hi String          ctermfg=144
-   hi Conditional     ctermfg=161               cterm=bold
-   hi Constant        ctermfg=135               cterm=bold
+"  hi Conditional     ctermfg=161               cterm=bold
+   hi Conditional     ctermfg=161
+"  hi Constant        ctermfg=135               cterm=bold
+   hi Constant        ctermfg=135
    hi Cursor          ctermfg=16  ctermbg=253
    hi Debug           ctermfg=225               cterm=bold
    hi Define          ctermfg=81
@@ -170,7 +173,7 @@ if &t_Co > 255
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208               cterm=none
    hi Ignore          ctermfg=244 ctermbg=232
-   hi IncSearch       ctermfg=193 ctermbg=16
+"   hi IncSearch       ctermfg=193 ctermbg=16
 
    hi keyword         ctermfg=161               cterm=bold
    hi Label           ctermfg=229               cterm=none
@@ -214,9 +217,9 @@ if &t_Co > 255
    hi Title           ctermfg=166
    hi Todo            ctermfg=231 ctermbg=232   cterm=bold
 
-   hi Typedef         ctermfg=81
-   hi Type            ctermfg=81                cterm=none
-   hi Underlined      ctermfg=244               cterm=underline
+"   hi Typedef         ctermfg=81
+"   hi Type            ctermfg=81                cterm=none
+"   hi Underlined      ctermfg=244               cterm=underline
 
    hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
    hi VisualNOS                   ctermbg=238
@@ -232,43 +235,43 @@ if &t_Co > 255
 
    hi SpecialKey      ctermfg=59
 
-   if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234
-       hi CursorLine               ctermbg=236   cterm=none
-       hi CursorLineNr ctermfg=208               cterm=none
-
-       hi Boolean         ctermfg=141
-       hi Character       ctermfg=222
-       hi Number          ctermfg=141
-       hi String          ctermfg=222
-       hi Conditional     ctermfg=197               cterm=bold
-       hi Constant        ctermfg=141               cterm=bold
-
-       hi DiffDelete      ctermfg=125 ctermbg=233
-
-       hi Directory       ctermfg=154               cterm=bold
-       hi Error           ctermfg=222 ctermbg=233
-       hi Exception       ctermfg=154               cterm=bold
-       hi Float           ctermfg=141
-       hi Function        ctermfg=154
-       hi Identifier      ctermfg=208
-
-       hi Keyword         ctermfg=197               cterm=bold
-       hi Operator        ctermfg=197
-       hi PreCondit       ctermfg=154               cterm=bold
-       hi PreProc         ctermfg=154
-       hi Repeat          ctermfg=197               cterm=bold
-
-       hi Statement       ctermfg=197               cterm=bold
-       hi Tag             ctermfg=197
-       hi Title           ctermfg=203
-       hi Visual                      ctermbg=238
-
-       hi Comment         ctermfg=244
-       hi LineNr          ctermfg=239 ctermbg=235
-       hi NonText         ctermfg=239
-       hi SpecialKey      ctermfg=239
-   endif
+"   if exists("g:rehash256") && g:rehash256 == 1
+"       hi Normal       ctermfg=252 ctermbg=234
+"       hi CursorLine               ctermbg=236   cterm=none
+"       hi CursorLineNr ctermfg=208               cterm=none
+"
+"       hi Boolean         ctermfg=141
+"       hi Character       ctermfg=222
+"       hi Number          ctermfg=141
+"       hi String          ctermfg=222
+"       hi Conditional     ctermfg=197               cterm=bold
+"       hi Constant        ctermfg=141               cterm=bold
+"
+"       hi DiffDelete      ctermfg=125 ctermbg=233
+"
+"       hi Directory       ctermfg=154               cterm=bold
+"       hi Error           ctermfg=222 ctermbg=233
+"       hi Exception       ctermfg=154               cterm=bold
+"       hi Float           ctermfg=141
+"       hi Function        ctermfg=154
+"       hi Identifier      ctermfg=208
+"
+"       hi Keyword         ctermfg=197               cterm=bold
+"       hi Operator        ctermfg=197
+"       hi PreCondit       ctermfg=154               cterm=bold
+"       hi PreProc         ctermfg=154
+"       hi Repeat          ctermfg=197               cterm=bold
+"
+"       hi Statement       ctermfg=197               cterm=bold
+"       hi Tag             ctermfg=197
+"       hi Title           ctermfg=203
+"       hi Visual                      ctermbg=238
+"
+"       hi Comment         ctermfg=244
+"       hi LineNr          ctermfg=239 ctermbg=235
+"       hi NonText         ctermfg=239
+"       hi SpecialKey      ctermfg=239
+"   endif
 end
 
 " Must be at the end, because of ctermbg=234 bug.

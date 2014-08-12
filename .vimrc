@@ -2,7 +2,8 @@
 "===== Vundle and bundles configuration =====
 source ~/.vim/bundles.vim
 
-colorscheme default
+"colorscheme default
+colorscheme molokai
 
 "===== display =====
 set number
