@@ -18,4 +18,6 @@
   ls = log --stat --abbrev-commit -n 1
   s  = status --short --branch
   st = status
+  co = checkout
+  di = diff
 
