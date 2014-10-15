@@ -51,6 +51,10 @@ NeoBundle 'osyo-manga/vim-over'    " :OverCommandLine
 " https://github.com/szw
 NeoBundle 'szw/vim-tags'
 
+" https://github.com/ctrlpvim
+" ファイルサーチプラグイン
+NeoBundle "ctrlpvim/ctrlp.vim"
+
 " https://github.com/itchyny/lightline.vim
 NeoBundle 'itchyny/lightline.vim'
 
