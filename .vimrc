@@ -21,8 +21,9 @@ set formatoptions=lmoq          "整形オプション，マルチバイト系�
 set shiftwidth=2                "シフト幅
 set hlsearch
 set ts=2                        "Tabのspaceは2
+"set mouse=a
 set nocompatible
-set mouse=a
+set ttymouse=xterm2
 
 filetype plugin on
 filetype indent on
@@ -31,6 +32,7 @@ filetype indent on
 set encoding=utf-8
 set termencoding=utf-8
 set fileencoding=utf-8
+set fileformat=unix
 
 "===== syntax color =====
 syntax on
