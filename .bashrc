@@ -11,7 +11,6 @@ alias vi='vim'
 alias svn='colorsvn'
 alias grep='grep --exclude=*.svn* --color=auto'
 alias rake='bundle exec rake'
-alias rails='bundle exec rails'
 
 export TERM=xterm-256color
 
