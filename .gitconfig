@@ -19,5 +19,7 @@
   s  = status --short --branch
   st = status
   co = checkout
-  di = diff
+  d  = diff
+  dc = diff --cached
+  b  = branch
 
