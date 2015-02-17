@@ -12,6 +12,7 @@
   whitespace = cr-at-eol
   pager =
   excludesfile = ~/.gitignore
+	quotepath = false
 [alias]
   ll = log --stat --abbrev-commit -n 5
   lp = log --oneline -n 10 -p
