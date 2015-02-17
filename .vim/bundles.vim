@@ -15,11 +15,13 @@ set nocompatible
 if has('vim_starting')
   set runtimepath+=~/.vim/neobundle.vim
   filetype off
-  call neobundle#rc(expand('~/.vim/.bundle'))
+  call neobundle#begin(expand('~/.vim/.bundle'))
 
   filetype plugin on
   filetype indent on
   syntax on
+
+  call neobundle#end()
 endif
 
 " == Plugins
