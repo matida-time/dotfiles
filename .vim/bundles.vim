@@ -12,17 +12,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set nocompatible 
-if has('vim_starting')
-  set runtimepath+=~/.vim/neobundle.vim
-  filetype off
-  call neobundle#begin(expand('~/.vim/.bundle'))
+set runtimepath+=~/.vim/neobundle.vim
+filetype off
+filetype plugin on
+filetype indent on
+syntax on
 
-  filetype plugin on
-  filetype indent on
-  syntax on
-
-  call neobundle#end()
-endif
+call neobundle#begin(expand('~/.vim/.bundle'))
 
 " == Plugins
 
@@ -32,7 +28,7 @@ NeoBundle 'vim-scripts/buftabs'
 NeoBundle 'vim-scripts/svn-diff.vim'
 NeoBundle 'vim-scripts/taglist.vim'  " :Tlist
 NeoBundle 'vim-scripts/netrw.vim'
-NeoBundle 'vim-ruby/vim-ruby'
+"NeoBundle 'vim-ruby/vim-ruby'
 "NeoBundle 'vim-scripts/zoom.vim' for GUI
 
 "NeoBundle 'tpope/vim-haml'
@@ -73,3 +69,4 @@ NeoBundle 'kchmck/vim-coffee-script'
 "NeoBundle 'fatih/vim-go'
 
 " == Plugins End ...rest of bundles
+call neobundle#end()
